@@ -16,5 +16,5 @@ export default defineConfig({
       provider: "istanbul",
     },
   },
-  base: "/frogsweeper"
+  base: "/frogsweeper/"
 });
