@@ -1,0 +1,68 @@
+.game-difficulty {
+  display: flex;
+  flex-direction: column;
+
+  width: 350px;
+}
+
+.difficulty-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#difficulty-headers {
+  font-weight: bold;
+}
+
+.difficulty {
+  width: 130px;
+  font-weight: bold;
+}
+
+.difficulty-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 130px);
+  text-align: center;
+}
+
+.difficulty-options div {
+  width: 50px;
+}
+
+.difficulty-options div input {
+  text-align: center;
+  width: 100%;
+}
+
+.game-difficulty button {
+  margin-top: 5px;
+  padding: 5px;
+
+  background: rgb(109, 169, 109);
+  border-top: 2px solid rgb(127, 198, 127);
+  border-left: 2px solid rgb(127, 198, 127);
+  border-right: 2px solid rgb(90, 140, 90);
+  border-bottom: 2px solid rgb(90, 140, 90);
+}
+
+.game-difficulty button:active {
+  transform: scale(0.98);
+  border-top: solid 2px rgb(90, 140, 90);
+  border-left: solid 2px rgb(90, 140, 90);
+  border-right: solid 2px rgb(127, 198, 127);
+  border-bottom: solid 2px rgb(127, 198, 127);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
