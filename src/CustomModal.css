@@ -1,0 +1,33 @@
+.outer-modal {
+  height: 100%;
+  width: 100%;
+}
+
+#modal-top-bar {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 5px;
+  padding-bottom: 0px;
+  background: rgb(76, 116, 76);
+}
+
+#modal-top-bar h2 {
+  font-size: 14px;
+  margin: 0px;
+}
+
+#modal-top-bar button {
+  background: none;
+  border: none;
+  height: 25px;
+  width: 25px;
+}
+
+#modal-content {
+  height: calc(100% - 35px);
+  width: 100%;
+  padding: 10px;
+  padding-top: 3px;
+}

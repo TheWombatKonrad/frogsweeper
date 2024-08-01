@@ -1,0 +1,22 @@
+#controls-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#controls-desktop {
+  display: flex;
+  flex-direction: column;
+}
+
+#controls-mobile {
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 12px;
+  margin: 0px;
+}
+
+ul {
+  margin: 3px;
+}

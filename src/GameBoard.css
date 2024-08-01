@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Digital";
+  src: url(./fonts/Digital.TTF);
+}
+
+#game-console {
+  background-color: var(--light-background-color);
+  border-right: solid 2px var(--light-shadowed-border-color);
+  border-bottom: solid 2px var(--light-shadowed-border-color);
+  border-top: solid 2px var(--light-border-color);
+  border-left: solid 2px var(--light-border-color);
+
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  --light-background-color: rgb(163, 187, 245);
+  --medium-background-color: rgb(148, 176, 243);
+  --dark-background-color: rgb(110, 148, 245);
+  --light-border-color: rgb(189, 206, 244);
+  --light-shadowed-border-color: rgb(113, 151, 245);
+  --medium-border-color: rgb(180, 200, 245);
+  --medium-shadowed-border-color: rgb(104, 144, 245);
+  --dark-border-color: rgb(78, 126, 245);
+}
+
+#console-controls {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 35px;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 0px 10px;
+
+  border-right: solid 2px var(--light-border-color);
+  border-bottom: solid 2px var(--light-border-color);
+  border-left: solid 2px var(--light-shadowed-border-color);
+  border-top: solid 2px var(--light-shadowed-border-color);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: calc(100% - 4px);
+
+  margin: 2px;
+  background: var(--medium-background-color);
+  border-right: solid 2px var(--medium-border-color);
+  border-bottom: solid 2px var(--medium-border-color);
+  border-left: solid 2px var(--medium-shadowed-border-color);
+  border-top: solid 2px var(--medium-shadowed-border-color);
+
+  color: rgb(4, 72, 245);
+  font-family: "Digital", Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 27px;
+}
+
+#reset-button {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 30px;
+  border-radius: 0;
+  background-color: var(--light-background-color);
+  border-right: solid 2px var(--light-shadowed-border-color);
+  border-bottom: solid 2px var(--light-shadowed-border-color);
+  border-top: solid 2px var(--light-border-color);
+  border-left: solid 2px var(--light-border-color);
+}
+
+#reset-button:active {
+  transform: scale(0.98);
+  border-right: solid 2px var(--light-border-color);
+  border-bottom: solid 2px var(--light-border-color);
+  border-top: solid 2px var(--light-shadowed-border-color);
+  border-left: solid 2px var(--light-shadowed-border-color);
+}
+
+#board {
+  border-top: solid 2px var(--light-shadowed-border-color);
+  border-left: solid 2px var(--light-shadowed-border-color);
+  border-right: solid 2px var(--light-border-color);
+  border-bottom: solid 2px var(--light-border-color);
+}
+
+.board-row {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.board-column {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.board-cell {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-cell-button {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  background: var(--light-background-color);
+  border-top: solid 2px var(--light-border-color);
+  border-left: solid 2px var(--light-border-color);
+  border-right: solid 2px var(--light-shadowed-border-color);
+  border-bottom: solid 2px var(--light-shadowed-border-color);
+}
+
+.outer-cell-button:active {
+  transform: scale(0.98);
+  border-top: solid 2px var(--light-shadowed-border-color);
+  border-left: solid 2px var(--light-shadowed-border-color);
+  border-right: solid 2px var(--light-border-color);
+  border-bottom: solid 2px var(--light-border-color);
+}
+
+.outer-cell-button div {
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: red;
+}
+
+.inner-cell-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.2px var(--dark-border-color);
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  font-weight: bolder;
+  background: var(--dark-background-color);
+}
+
+.bomb {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.emojione {
+  margin: 0px !important;
+  display: inline !important;
+}

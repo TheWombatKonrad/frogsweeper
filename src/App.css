@@ -1,0 +1,79 @@
+#outer-window {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar {
+  height: 100%;
+  width: 200px;
+  border: 2px solid red;
+}
+
+#inner-window {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  /* width: calc(100% - 200px); */
+  width: 100%;
+}
+
+#top-bar {
+  display: flex;
+
+  height: 25px;
+  width: 100%;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#controls li {
+  height: 100%;
+}
+
+#controls li button {
+  height: 100%;
+
+  background: rgb(109, 169, 109);
+  border-top: 2px solid rgb(127, 198, 127);
+  border-left: 2px solid rgb(127, 198, 127);
+  border-right: 2px solid rgb(90, 140, 90);
+  border-bottom: 2px solid rgb(90, 140, 90);
+}
+
+#controls li button:active {
+  transform: scale(0.98);
+  border-top: solid 2px rgb(90, 140, 90);
+  border-left: solid 2px rgb(90, 140, 90);
+  border-right: solid 2px rgb(127, 198, 127);
+  border-bottom: solid 2px rgb(127, 198, 127);
+}
+
+#music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5px;
+  color: rgb(128, 197, 128);
+}
+
+#gameboard-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
